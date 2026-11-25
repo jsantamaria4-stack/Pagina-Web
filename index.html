@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOTHA Photography | Captura momentos, crea historias</title>
+<meta name="description" content="Fotografía profesional y creación de contenido visual para emprendedores, empresas y marcas personales. Captura tu visión, eleva tu marca.">
+<meta property="og:title" content="JOTHA Photography">
+<meta property="og:description" content="Captura momentos, crea historias.">
+<meta property="og:image" content="assets/img/hero.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="progress" id="prog"></div><div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#inicio" class="brand" aria-label="Jotha Photography"><img src="assets/img/logo.webp" alt="Logo Jotha" width="48" height="48"></a>
+  <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#servicios">Servicios</a><a href="#portafolio">Portafolio</a><a href="#testimonios">Testimonios</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<!-- INICIO -->
+<section class="hero" id="inicio">
+  <div class="layer bg" data-depth="12" style="background-image:url(assets/img/hero.jpg)"></div>
+  <canvas id="gl" class="layer" aria-hidden="true"></canvas>
+  <div class="layer sun"></div>
+  <svg class="layer clouds" data-depth="20" aria-hidden="true" width="0" height="0"><defs>
+    <filter id="cl" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".004 .012" numOctaves="5" seed="7"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 .86  0 0 0 0 .75  0 0 0 1.5 -.55"/></filter>
+    <filter id="cl2" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".006 .018" numOctaves="4" seed="21"/><feColorMatrix values="0 0 0 0 .75  0 0 0 0 .8  0 0 0 0 .9  0 0 0 1.5 -.62"/></filter></defs></svg>
+  <div class="layer cloud c1"><svg width="100%" height="100%"><rect width="100%" height="100%" filter="url(#cl)"/></svg></div>
+  <div class="layer cloud c2"><svg width="100%" height="100%"><rect width="100%" height="100%" filter="url(#cl2)"/></svg></div>
+  <div class="layer mist m1"></div><div class="layer mist m2"></div>
+  <div class="layer front" data-depth="26" style="background-image:url(assets/img/hero.jpg)"></div>
+  <canvas id="particles" class="layer" aria-hidden="true"></canvas>
+  <div class="layer vignette"></div>
+  <div class="hero-copy">
+    <h1><span class="ln"><i>CAPTURA</i></span><span class="ln"><i>MOMENTOS,</i></span><span class="ln red"><i>CREA HISTORIAS.</i></span></h1>
+    <p class="fade" style="--d:1.2s">Fotografía profesional y contenido estratégico diseñado para destacar tu negocio, atraer clientes y elevar tu presencia visual.</p>
+    <a href="#portafolio" class="btn fade" style="--d:1.5s"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>VER PORTAFOLIO<span class="arr">→</span></a>
+    <div class="rating fade" style="--d:1.8s"><span class="avs"><img src="assets/img/av1.webp" alt=""><img src="assets/img/av2.webp" alt=""><img src="assets/img/av3.webp" alt=""></span><span class="stars">★★★★★</span></div>
+  </div>
+  <a href="#sobre-mi" class="scroll" aria-label="Descubrir"><span>DESCUBRE</span><i></i></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div><span>CAPTURA MOMENTOS <b>◉</b> CREA HISTORIAS <b>◉</b> CAPTURA TU VISIÓN <b>◉</b> ELEVA TU MARCA <b>◉</b> </span><span>CAPTURA MOMENTOS <b>◉</b> CREA HISTORIAS <b>◉</b> CAPTURA TU VISIÓN <b>◉</b> ELEVA TU MARCA <b>◉</b> </span></div></div>
+<!-- SOBRE MÍ -->
+<section class="about" id="sobre-mi" data-n="01">
+  <div class="about-img"><div class="pframe v1 reveal"><span class="pf-bg"></span><img class="pf-img" src="assets/img/pf-about.webp" alt="Jotha, fotógrafo y creador de contenido" loading="lazy"><span class="chip k1"><i></i>4 años en fotografía</span><span class="chip k2"><i></i>Jotha Photography</span></div></div>
+  <div class="about-txt">
+    <p class="eyebrow reveal">Sobre Jotha</p>
+    <h2 class="reveal">UN POCO SOBRE MÍ</h2>
+    <p class="lead reveal">Soy Jotha, fotógrafo y creador de contenido, apasionado por capturar la esencia de cada proyecto. Mi enfoque es simple: crear imágenes que hablen, que conecten y que generen resultados.</p>
+    <div class="pillars">
+      <div class="reveal"><img src="assets/img/ico-exp.webp" alt=""><h3>Experiencia</h3><p><b class="count" data-to="4">4</b> años en fotografía y contenido visual</p></div>
+      <div class="reveal" style="--d:.15s"><img src="assets/img/ico-crea.webp" alt=""><h3>Creatividad</h3><p>Ideas que se convierten en imágenes</p></div>
+      <div class="reveal" style="--d:.3s"><img src="assets/img/ico-comp.webp" alt=""><h3>Compromiso</h3><p>Tu proyecto también es el mío.</p></div>
+    </div>
+    <blockquote class="reveal">“La fotografía no solo muestra lo que ves, sino lo que sientes.”</blockquote>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="services" id="servicios" data-n="02">
+  <h2 class="center reveal">ÁREAS DE <em>ESPECIALIDAD</em></h2>
+  <div class="cards">
+    <article class="card reveal"><div class="info"><img src="assets/img/ico-foto.webp" alt=""><h3>Enfoque Comercial y Marcas</h3><p>Fotografía de Producto | Contenido para Redes Sociales | Fotografía Gastronómica</p></div><div class="ph"><img src="assets/img/g-waffle.webp" alt="Fotografía gastronómica" loading="lazy"></div></article>
+    <article class="card reveal" style="--d:.15s"><div class="info"><img src="assets/img/ico-evento.webp" alt=""><h3>Enfoque Eventos y Retrato</h3><p>Fotografía Social/Bodas | Retrato Corporativo | Documental de Eventos</p></div><div class="ph"><img src="assets/img/g-dueto.webp" alt="Fotografía de eventos" loading="lazy"></div></article>
+    <article class="card reveal" style="--d:.3s"><div class="info"><img src="assets/img/ico-video.webp" alt=""><h3>Edición Audiovisual</h3><p>Editar videos para redes sociales</p></div><div class="ph"><img src="assets/img/camara-mesa.webp" alt="Cámara sobre mesa" loading="lazy"></div></article>
+  </div>
+</section>
+
+<!-- PÚBLICO OBJETIVO -->
+<section class="audience">
+  <div class="aud-txt">
+    <h2 class="reveal"><em>PÚBLICO</em> OBJETIVO</h2>
+    <p class="lead reveal">Emprendedores, pequeñas y medianas empresas, marcas personales y creadores de contenido que necesitan fotografías y contenido visual profesional para promocionar sus productos, servicios o imagen en redes sociales y medios digitales.</p>
+    <blockquote class="reveal">“No solo capturo imágenes; creo contenido que hace que tu marca se vea, conecte y destaque.”</blockquote>
+  </div>
+  <div class="aud-ph"><img class="reveal" src="assets/img/pub1.webp" alt="Producto en mano" loading="lazy"><img class="reveal" style="--d:.2s" src="assets/img/pub2.webp" alt="Postre de emprendimiento" loading="lazy"></div>
+<div class="aud-cards"><div class="ac reveal" style="--d:0s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span><b>Emprendedores</b></div><div class="ac reveal" style="--d:0.1s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2 8 2v16M9 9h2M13 9h2M9 13h2M13 13h2M10 21v-4h4v4"/></svg></span><b>Pequeñas y medianas empresas</b></div><div class="ac reveal" style="--d:0.2s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span><b>Marcas personales</b></div><div class="ac reveal" style="--d:0.3s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></span><b>Creadores de contenido</b></div></div>
+</section>
+
+<!-- PROPUESTA DE VALOR -->
+<section class="value">
+  <div class="val-txt">
+    <h2 class="reveal"><em>PROPUESTA</em><br><em>DE</em> VALOR</h2>
+    <p class="lead reveal">Creo fotografías y contenido visual profesional que cuentan la esencia de cada marca, combinando creatividad, calidad y una estética moderna para ayudar a negocios, emprendedores y creadores a destacar y conectar con su público.</p>
+    <div class="vcards"><div class="vc reveal" style="--d:0s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></span><div><b>Creatividad</b><p>Ideas que se convierten en imágenes.</p></div></div><div class="vc reveal" style="--d:0.15s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></span><div><b>Calidad</b><p>Experiencia, responsabilidad y calidad en cada fotografía y proyecto.</p></div></div><div class="vc reveal" style="--d:0.3s"><span class="attr-ic"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><div><b>Estética moderna</b><p>Una estética actual, limpia y atractiva, adaptada a redes sociales.</p></div></div></div>
+  </div>
+  <div class="val-wrap"><div class="pframe v2 reveal"><span class="pf-bg"></span><img class="pf-img" src="assets/img/pf-camara.webp" alt="Jotha con su cámara Nikon" loading="lazy"><span class="chip k1"><i></i>Calidad</span><span class="chip k2"><i></i>Estética moderna</span></div></div>
+</section>
+
+<!-- PERSONALIDAD -->
+<section class="persona">
+  <h2 class="center reveal"><em>PERSONALIDAD DE MARCA</em></h2>
+  <div class="persona-in">
+    <ol>
+      <li class="reveal"><span class="attr-ic a1"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><b>1. Profesional</b>Transmitir experiencia, responsabilidad y calidad en cada fotografía y proyecto.</div></li>
+      <li class="reveal" style="--d:.15s"><span class="attr-ic a2"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></span><div><b>2. Creativo</b>Buscar ángulos, composiciones y propuestas visuales diferentes que hagan destacar cada imagen.</div></li>
+      <li class="reveal" style="--d:.3s"><span class="attr-ic a3"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><div><b>3. Moderno</b>Utilizar una estética actual, limpia y atractiva, adaptada a redes sociales y marcas contemporáneas.</div></li>
+    </ol>
+    <div class="pframe v3 reveal"><span class="pf-bg"></span><img class="pf-img" src="assets/img/pf-sonrisa.webp" alt="Jotha" loading="lazy"><span class="chip k1"><i></i>Profesional</span><span class="chip k2"><i></i>Creativo</span><span class="chip k3"><i></i>Moderno</span></div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="strip-in"><img src="assets/img/g-atardecer.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-jam.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-boda.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-lago.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-perfume.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-dueto.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-calle.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-waffle.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-quince.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-valle.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-atardecer.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-jam.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-boda.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-lago.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-perfume.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-dueto.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-calle.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-waffle.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-quince.webp" alt="" loading="lazy" decoding="async"><img src="assets/img/g-valle.webp" alt="" loading="lazy" decoding="async"></div></div>
+<div class="marquee rev" aria-hidden="true"><div><span>CAPTURA MOMENTOS <b>◉</b> CREA HISTORIAS <b>◉</b> CAPTURA TU VISIÓN <b>◉</b> ELEVA TU MARCA <b>◉</b> </span><span>CAPTURA MOMENTOS <b>◉</b> CREA HISTORIAS <b>◉</b> CAPTURA TU VISIÓN <b>◉</b> ELEVA TU MARCA <b>◉</b> </span></div></div>
+<!-- PORTAFOLIO: cámara Nikon D5600 interactiva -->
+<section class="gate" id="portafolio" data-n="04">
+  <p class="eyebrow reveal" style="justify-content:center">Nuestro trabajo</p>
+  <h2 class="reveal">ENTRA EN MI <em>CÁMARA</em></h2>
+  <p class="lead reveal" style="margin:1rem auto 0">Toca el lente de la Nikon D5600 y cruza al otro lado: mis fotografías te esperan dentro.</p>
+  <figure class="shot" id="cam">
+    <img src="assets/img/lens-photo.webp" alt="Jotha sosteniendo la cámara Nikon D5600" width="960" height="720">
+    <button type="button" class="hot" id="hot" aria-label="Entrar al portafolio a través del lente de la Nikon D5600"></button>
+  </figure>
+  <p class="lens-hint"><span>◉</span> TOCA EL LENTE PARA ENTRAR</p>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testi" id="testimonios" data-n="05">
+  <p class="eyebrow reveal">Lo que dicen nuestros clientes</p>
+  <h2 class="reveal">Testimonios</h2>
+  <div class="car" id="car" tabindex="0" role="group" aria-roledescription="carrusel" aria-label="Testimonios">
+    <figure class="t-card"><blockquote>“Excelente trabajo, superó todas nuestras expectativas. El contenido quedó increíble y muy profesional.”</blockquote><figcaption><img src="assets/img/av1.webp" alt=""><span><b>Roy Rueda</b>Negocio de Helados</span><span class="stars">★★★★★</span></figcaption></figure>
+    <figure class="t-card"><blockquote>“Capturó la esencia de nuestra marca en cada imagen. 100% recomendado.”</blockquote><figcaption><img src="assets/img/av2.webp" alt=""><span><b>Ledys Ryeda</b>Negocio de Óptica</span><span class="stars">★★★★★</span></figcaption></figure>
+    <figure class="t-card"><blockquote>“La mejor decisión para nuestro lanzamiento. Creatividad, compromiso y una calidad insuperable.”</blockquote><figcaption><img src="assets/img/av3.webp" alt=""><span><b>Juliana Galvan</b>Emprendimiento de postres</span><span class="stars">★★★★★</span></figcaption></figure>
+  </div>
+  <div class="car-ctl"><button id="tPrev" aria-label="Anterior">‹</button><button class="dot on" aria-label="Testimonio 1"></button><button class="dot" aria-label="Testimonio 2"></button><button class="dot" aria-label="Testimonio 3"></button><button id="tNext" aria-label="Siguiente">›</button></div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto" data-n="06">
+  <div class="ct-in">
+    <img class="logo-big reveal" src="assets/img/logo.webp" alt="Jotha Photography" loading="lazy">
+    <p class="eyebrow reveal">¿Listo para crear algo increíble?</p>
+    <h2 class="reveal">HAGÁMOSLO <em>REALIDAD</em></h2>
+    <p class="lead reveal">Contáctame y cuéntame tu idea. Estoy aquí para ayudarte.</p>
+    <form class="cform reveal" id="cform" novalidate>
+      <label>Nombre<input id="fn" autocomplete="name" maxlength="80" required></label>
+      <label>Correo<input id="fe" type="email" autocomplete="email" maxlength="120" required></label>
+      <label class="full">Servicio de interés<select id="fs"><option>Fotografía de producto / gastronómica</option><option>Contenido para redes sociales</option><option>Eventos, bodas y retrato</option><option>Edición audiovisual</option></select></label>
+      <label class="full">Cuéntame tu idea<textarea id="fm" rows="4" maxlength="600"></textarea></label>
+      <div class="full cbtns"><button class="btn" type="submit">SOLICITAR COTIZACIÓN<span class="arr">→</span></button><button class="btn alt" type="button" id="fmail">POR CORREO</button></div>
+      <p class="cmsg" id="cmsg" role="status" aria-live="polite"></p>
+    </form>
+    <div class="ct-links reveal"><a href="https://wa.me/573160561257" target="_blank" rel="noopener">WhatsApp · 316 056 1257</a><a href="mailto:jotaph218@gmail.com">jotaph218@gmail.com</a></div>
+    <p class="tag reveal">Captura tu visión, eleva tu marca.</p>
+  </div>
+</section>
+</main>
+<footer><img src="assets/img/logo.webp" alt="" width="36" height="36"><p>© <span id="yr"></span> Jotha Photography · Fotografía profesional y creación de contenido visual</p></footer>
+
+<div class="pf" id="pf" role="dialog" aria-modal="true" aria-label="Portafolio fotográfico" hidden>
+  <div class="pf-top"><button class="pf-back" id="pfBack">← VOLVER A LA EXPERIENCIA</button><img src="assets/img/logo.webp" alt="Jotha Photography" width="44" height="44"></div>
+  <p class="eyebrow">Portafolio</p><h2 class="pf-title" id="pfTitle"></h2>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Categorías"><button role="tab" data-c="producto">Productos</button><button role="tab" data-c="eventos">Eventos</button><button role="tab" data-c="paisajes">Paisajes</button></div>
+  <p class="cat-desc" id="pfDesc"></p><div class="mas" id="mas"></div>
+</div>
+<div class="lb" id="lb" hidden><button class="x" aria-label="Cerrar">×</button><button class="pv" aria-label="Anterior">‹</button><img alt=""><button class="nx" aria-label="Siguiente">›</button></div>
+<script src="js/hero-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/hero-gl.js"></script>
+</body>
+</html>
